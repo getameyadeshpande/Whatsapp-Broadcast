@@ -12,7 +12,7 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         messaging_product: "whatsapp",
-        to: 918286202242,
+        to: number,
         type: "template",
         template: {
           name: "hello_world",
@@ -28,3 +28,28 @@ export default async function handler(req, res) {
 
   res.status(200).json(data)
 }
+
+// {
+//   "messaging_product": "whatsapp",
+//   "to": "917977603043",
+//   "type": "template",
+//   "template": {
+//     "name": "updated_gudipadwa",
+//     "language": {
+//       "code": "en"
+//     },
+//     "components": [
+//       {
+//         "type": "header",
+//         "parameters": [
+//           {
+//             "type": "image",
+//             "image": {
+//               "link": "https://imgeng.jagran.com/images/2025/03/28/template/image/gudi-padwa-30-march-2025-1743139811046.jpg"
+//             }
+//           }
+//         ]
+//       }
+//     ]
+//   }
+// }
